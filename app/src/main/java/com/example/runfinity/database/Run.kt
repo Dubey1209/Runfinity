@@ -6,8 +6,8 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
 
 @Entity(tableName = "running_table")
+@TypeConverters(Converters::class)
 data class Run(
-    @TypeConverters(Converters::class)
     var image: Bitmap? = null,
     var timeStamp: Long = 0L,
     var averageSpeedKMH: Float = 0f,
