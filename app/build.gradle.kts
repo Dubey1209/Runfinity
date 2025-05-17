@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.navigation.safe.args)
+    alias(libs.plugins.hilt.android)
 }
 
 android {
@@ -18,7 +19,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // Room schema export
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments += mapOf(
@@ -39,13 +39,16 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
+
     buildFeatures {
         viewBinding = true
     }
@@ -90,15 +93,17 @@ dependencies {
     implementation(libs.play.services.location)
     implementation(libs.play.services.maps)
 
-    // Dagger
-    implementation(libs.dagger)
-    implementation(libs.dagger.android)
-    implementation(libs.dagger.android.support)
-    ksp(libs.dagger.compiler)
-    ksp(libs.dagger.android.processor)
-
-    // Others
+    // EasyPermissions
     implementation(libs.easypermissions)
+
+    // Timber
     implementation(libs.timber)
+
+    // MPAndroidChart
     implementation(libs.mpandroidchart)
+
+    // ✅ Hilt (from libs.versions.toml)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+    implementation(libs.hilt.navigation.fragment)
 }
