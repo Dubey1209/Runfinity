@@ -56,18 +56,18 @@ android {
 
 dependencies {
     // Core Android
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.core.ktx)          // maps to androidx-core-ktx
+    implementation(libs.androidx.appcompat)         // maps to androidx-appcompat
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.activity)          // maps to androidx-activity
+    implementation(libs.androidx.constraintlayout)  // maps to androidx-constraintlayout
 
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    // Lifecycle
+    // Lifecycle - use ktX versions exactly
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.androidx.lifecycle.livedata)
@@ -102,7 +102,7 @@ dependencies {
     // MPAndroidChart
     implementation(libs.mpandroidchart)
 
-    // ✅ Hilt (from libs.versions.toml)
+    // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.fragment)
