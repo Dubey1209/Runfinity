@@ -9,7 +9,6 @@ plugins {
 android {
     namespace = "com.example.runfinity"
     compileSdk = 35
-
     defaultConfig {
         applicationId = "com.example.runfinity"
         minSdk = 24
@@ -56,11 +55,11 @@ android {
 
 dependencies {
     // Core Android
-    implementation(libs.androidx.core.ktx)          // maps to androidx-core-ktx
-    implementation(libs.androidx.appcompat)         // maps to androidx-appcompat
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)          // maps to androidx-activity
-    implementation(libs.androidx.constraintlayout)  // maps to androidx-constraintlayout
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
 
     // Testing
     testImplementation(libs.junit)

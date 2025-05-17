@@ -6,7 +6,7 @@ pluginManagement {
     }
 
     plugins {
-        id("com.google.dagger.hilt.android") version "2.48" apply false
+        id("com.google.dagger.hilt.android") version "2.50" apply false
     }
 }
 
@@ -15,7 +15,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven(url = "https://jitpack.io")
+        maven("https://jitpack.io")
     }
 }
 
