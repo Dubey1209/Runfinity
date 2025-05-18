@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Runfinity</string>
     <string name="google_mapsAPIKEY">AIzaSyD2f4GRBvHfV1yuISDC0luunyrf4k1feRw</string>
+    <string-array name="filter_options">
+        <item>Date</item>
+        <item>Running Time</item>
+        <item>Calories Burnt</item>
+        <item>Average Speed</item>
+        <item>Distance</item>
+    </string-array>
+
 </resources>
