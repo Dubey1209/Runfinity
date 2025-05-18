@@ -5,6 +5,7 @@
     android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
     tools:context=".ui.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -18,14 +19,15 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/topAppBar" >
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvToolbarTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Running App"
-                android:textSize="30sp"
+                android:text="RunFinity"
+                android:textSize="28sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical"
                 android:textColor="@android:color/white" />
@@ -50,6 +52,7 @@
         app:itemTextColor="@drawable/bottom_nav_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/bottomNavigationBackground"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
