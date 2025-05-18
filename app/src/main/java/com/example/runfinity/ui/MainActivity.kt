@@ -1,11 +1,11 @@
-package com.example.runfinity
+package com.example.runfinity.ui
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.runfinity.R
 import com.example.runfinity.database.Run_DAO
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
