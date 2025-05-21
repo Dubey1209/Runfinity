@@ -12,13 +12,13 @@
     <color name="md_blue_300">#A2D2DF</color>
     <color name="md_blue_400">#9EC6F3</color>
     <color name="md_blue_500">#60B5FF</color>
-    <color name="md_blue_700">#4D55CC</color>
+    <color name="md_blue_700">#CC4D55CC</color>
     <color name="md_blue_800">#1565C0</color>
     <color name="md_blue_900">#3674B5</color>
     <color name="md_blue_A100">#578FCA</color>
     <color name="md_blue_A200">#2973B2</color>
     <color name="md_blue_A400">#3B6790</color>
-    <color name="md_blue_A700">#4E71FF</color>
+    <color name="md_blue_A700">#994E71FF</color>
     <color name="coloraccent">#F5C45E</color>
     <color name="errorColor">#C84C05</color>
 
