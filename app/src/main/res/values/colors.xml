@@ -20,7 +20,7 @@
     <color name="md_blue_A400">#3B6790</color>
     <color name="md_blue_A700">#994E71FF</color>
     <color name="coloraccent">#F5C45E</color>
-    <color name="errorColor">#C84C05</color>
+    <color name="errorColor">#CCC84C05</color>
 
 
 </resources>
