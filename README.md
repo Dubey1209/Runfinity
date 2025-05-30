@@ -21,7 +21,7 @@
 ### 📐 MVVM Architecture
 ### 🧭 Jetpack Navigation Components
 ### 🗃️ Room Database + Kotlin Coroutines
-### 💉 Dagger for Dependency Injection
+### 💉 Hilt-Dagger for Dependency Injection
 
 Made with ❤️ by Deepika Dubey
 
